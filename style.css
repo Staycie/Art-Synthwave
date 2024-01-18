@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+.title{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+    color: aliceblue;
+    top: 490px;
+    left: 508px;
+    font-size: 2rem;
+}
+
+.square{
+    position: relative;
+    left: 360px;
+    top: 0px;
+    float: left;
+    margin: 4px;
+    width: 630px;
+    height: 641px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(90deg, #fa7199, #561ab8, #c42ab7, #fa7199);
+
+    background-size: 400%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+    top: -5px;
+}
+  
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.buildings{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    left: -41px;
+    
+}
+
+.buildingsupside{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    left: -41px;
+    z-index: 15;
+    top: 290px;
+    opacity: 0.08;
+}
+
+.ocean{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 373px;
+    left: 0px;
+}
+
+.border-left{
+    height: 641px;
+    width: 10px;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: -7px;
+}
+
+.border-right{
+    height: 641px;
+    width: 10px;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    right: -7px;
+}
+
+.border-top{
+    height: 10px;
+    width: 630px;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+    position: absolute;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    top: 0px;
+}
+
+.border-bottom{
+    height: 10px;
+    width: 630px;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+    position: absolute;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    bottom: 0px;
+}
+
+
