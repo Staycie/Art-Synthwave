@@ -2,25 +2,48 @@
 
 
 body{
+    padding: 0;
+    margin: 0;
     background-color: black;
+    height: 100vh;
+    width: 100%;
 }
 
-.title{
+.main-container {
+    width: 100%;
+
+    /* vertically & horizontally */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container {
+    margin: auto;
+    
+    /* vertically & horizontally */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
     font-family: 'Pacifico', cursive;
     position: absolute;
     text-align: center;
     z-index: 9;
     color: aliceblue;
-    top: 490px;
-    left: 508px;
-    font-size: 2rem;
+    
+    font-size: 5rem;
+    margin-top: 570px;
+    width: 640px;
 }
 
 .square{
     position: relative;
-    left: 360px;
     top: 0px;
-    float: left;
     margin: 4px;
     width: 630px;
     height: 641px;
@@ -46,8 +69,8 @@ body{
 .buildings{
     position: absolute;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
+    margin: 0;
     top: 20px;
     left: -41px;
     
@@ -55,11 +78,6 @@ body{
 
 .buildingsupside{
     position: absolute;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0px;
-    left: -41px;
     z-index: 15;
     top: 290px;
     opacity: 0.08;
